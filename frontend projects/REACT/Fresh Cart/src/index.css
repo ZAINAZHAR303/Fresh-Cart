@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+  .topbarLink{
+      @apply mr-[10px] text-[14px] cursor-pointer
+  }
+  .topbarIconsItem{
+      @apply mr-[15px] cursor-pointer relative
+
+  }
+  .FeatureImg{
+    @apply mb-6 
+  }
+  .FeatureHeading{
+    @apply text-[18px] font-bold mb-4
+  }
+  .FeatureP{
+    @apply text-[14px] mb-4 text-[#5C6C75]
+  }
+  .FeatureBox{
+    @apply basis-2/4
+  }
+
+}
