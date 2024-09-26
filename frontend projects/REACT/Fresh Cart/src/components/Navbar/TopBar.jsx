@@ -11,7 +11,7 @@ import SearchForm from "../SearchTab/SearchForm";
 import LocationBtn from "../SearchTab/LocationBtn";
 import ShoppingCart from "../SearchTab/ShoppingCart";
 import Departments from "../SearchTab/Departments";
-function TopBar() {
+function TopBar({setquery}) {
   return (
     <>
       <div className="py-4">
@@ -24,7 +24,7 @@ function TopBar() {
           </div>
           <div className="max-lg:hidden flex w-[50%] gap-2  items-center ">
             <div className="w-[80%]">
-              <SearchForm Height={"h-[3rem] rounded-lg"} />
+              <SearchForm Height={"h-[3rem] rounded-lg"} setquery={setquery} />
             </div>
             <div>
               <LocationBtn Text={"Location"} Height={"h-[3rem] w-[8rem]"} />

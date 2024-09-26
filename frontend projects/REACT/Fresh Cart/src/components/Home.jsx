@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TopBar from './Navbar/TopBar' 
 import ImageSlider from './ImageSlider/ImageSlider'
 import ApiTest from './ApiTest'
@@ -8,16 +8,17 @@ import BestSells from './BestSells'
 import Features from './Features'
 
 function Home() {
+  const[query,setquery] = useState("")
 
 
   
   return (
     <div>
-      <TopBar />
+      <TopBar setquery={setquery} />
       <ImageSlider/>
       <ApiTest />
       <Posters />
-      <PopularProducts />
+      <PopularProducts query={query} />
       <BestSells />
       <Features />
       
