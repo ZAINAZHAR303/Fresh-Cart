@@ -1,0 +1,5 @@
+echo "fastapi
+uvicorn
+tensorflow
+pillow
+" > backend/requirements.txt
