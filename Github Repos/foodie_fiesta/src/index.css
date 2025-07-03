@@ -1,0 +1,22 @@
+/* // index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f0f0f3; /* White neumorphic background */
+  color: #333;
+  font-family: 'Inter', sans-serif;
+}
+
+.neumorphic {
+  background: #f0f0f3;
+  border-radius: 12px;
+  box-shadow: 7px 7px 14px #d1d9e6, -7px -7px 14px #ffffff;
+}
+
+.neumorphic-inset {
+  background: #f0f0f3;
+  border-radius: 12px;
+  box-shadow: inset 7px 7px 14px #d1d9e6, inset -7px -7px 14px #ffffff;
+}
